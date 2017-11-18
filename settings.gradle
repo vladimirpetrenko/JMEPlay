@@ -1,0 +1,9 @@
+rootProject.name = 'JMEPlay'
+
+include 'JMEPlayCore'
+include 'JMEPlayDefinition'
+include 'JMEPlayAssets'
+include 'JMEPlayImageView'
+include 'JMEPlaySound'
+include 'JMEPlayConsole'
+

@@ -1,0 +1,63 @@
+/*
+ * JMEPlaySound
+ */
+
+apply plugin: 'application'
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+    //maven { url "http://dl.bintray.com/jmonkeyengine/org.jmonkeyengine" }
+}
+
+
+def junit = [v: '4.12']
+def spring_boot = [v: '1.5.2.RELEASE']
+
+def jme3 = [v:'3.1.0-stable', g:'org.jmonkeyengine']
+ext.lwjglVersion = "3.1.2"
+
+dependencies {
+    
+
+    compile "org.jmonkeyengine:jme3-desktop:${jme3.v}"
+    compile "org.jmonkeyengine:jme3-lwjgl3:${jme3.v}"
+    compile "org.jmonkeyengine:jme3-jogl:${jme3.v}"
+    compile "org.jmonkeyengine:jme3-jogg:${jme3.v}"
+    
+    // Use JUnit test framework
+    testCompile("junit:junit:${junit.v}")
+
+    // Use Spring-Framework
+    compile("org.springframework.boot:spring-boot-starter:${spring_boot.v}")
+    testCompile("org.springframework.boot:spring-boot-starter-test:${spring_boot.v}")
+
+    compile project(':JMEPlayDefinition')
+    
+       // LWJGL
+    compile "org.lwjgl:lwjgl:${lwjglVersion}"
+    compile "org.lwjgl:lwjgl-glfw:${lwjglVersion}"
+    compile "org.lwjgl:lwjgl-jemalloc:${lwjglVersion}"
+    compile "org.lwjgl:lwjgl-openal:${lwjglVersion}"
+    compile "org.lwjgl:lwjgl-opencl:${lwjglVersion}"
+    compile "org.lwjgl:lwjgl-opengl:${lwjglVersion}"
+    compile "org.lwjgl:lwjgl-stb:${lwjglVersion}"
+    runtime "org.lwjgl:lwjgl:${lwjglVersion}:natives-windows"
+    runtime "org.lwjgl:lwjgl:${lwjglVersion}:natives-linux"
+    runtime "org.lwjgl:lwjgl:${lwjglVersion}:natives-macos"
+    runtime "org.lwjgl:lwjgl-glfw:${lwjglVersion}:natives-windows"
+    runtime "org.lwjgl:lwjgl-glfw:${lwjglVersion}:natives-linux"
+    runtime "org.lwjgl:lwjgl-glfw:${lwjglVersion}:natives-macos"
+    runtime "org.lwjgl:lwjgl-jemalloc:${lwjglVersion}:natives-windows"
+    runtime "org.lwjgl:lwjgl-jemalloc:${lwjglVersion}:natives-linux"
+    runtime "org.lwjgl:lwjgl-jemalloc:${lwjglVersion}:natives-macos"
+    runtime "org.lwjgl:lwjgl-openal:${lwjglVersion}:natives-windows"
+    runtime "org.lwjgl:lwjgl-openal:${lwjglVersion}:natives-linux"
+    runtime "org.lwjgl:lwjgl-openal:${lwjglVersion}:natives-macos"
+    runtime "org.lwjgl:lwjgl-opengl:${lwjglVersion}:natives-windows"
+    runtime "org.lwjgl:lwjgl-opengl:${lwjglVersion}:natives-linux"
+    runtime "org.lwjgl:lwjgl-opengl:${lwjglVersion}:natives-macos"
+    runtime "org.lwjgl:lwjgl-stb:${lwjglVersion}:natives-windows"
+    runtime "org.lwjgl:lwjgl-stb:${lwjglVersion}:natives-linux"
+    runtime "org.lwjgl:lwjgl-stb:${lwjglVersion}:natives-macos"
+}

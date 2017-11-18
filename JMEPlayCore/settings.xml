@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Settings for whole application</comment>
+<entry key="consoleWriteExceptions">false</entry>
+<entry key="editorIconsSize">32</entry>
+<entry key="editorBottomDividerPosition">0.84375</entry>
+<entry key="editorStageMinWidth">800.0</entry>
+<entry key="editorStageHeight">1053.0</entry>
+<entry key="editorMaximized">true</entry>
+<entry key="editorBorderBarsVisible">true</entry>
+<entry key="editorRightDividerPosition">0.7955771305285868</entry>
+<entry key="editorLeftDividerPosition">0.1644295302013423</entry>
+<entry key="editorStageMinHeight">600.0</entry>
+<entry key="editorStageWidth">1920.0</entry>
+<entry key="editorStageY">27.0</entry>
+<entry key="editorStageX">422.0</entry>
+</properties>
